@@ -16,7 +16,7 @@ h1 {
 }
 
 textarea {
-    width: 780px;
+    width: 100%;
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
@@ -27,13 +27,13 @@ textarea {
 
 .inputs {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     gap: 10px;
     margin-bottom: 20px;
 }
 
 input {
-    flex: 1;
+    width: 100%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
@@ -53,4 +53,14 @@ button {
 
 button:hover {
     background-color: #0056b3;
+}
+
+@media (min-width: 600px) {
+    .inputs {
+        flex-direction: row;
+    }
+
+    input {
+        flex: 1;
+    }
 }
