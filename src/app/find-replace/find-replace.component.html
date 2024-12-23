@@ -1,0 +1,9 @@
+<div class="container">
+    <h1>Find and Replace Tool</h1>
+    <textarea #textArea rows="10" cols="50" placeholder="Type or paste your text here"></textarea>
+    <div class="inputs">
+      <input #findInput placeholder="Find" />
+      <input #replaceInput placeholder="Replace with" />
+      <button (click)="findAndReplace(textArea, findInput.value, replaceInput.value)">Replace</button>
+    </div>
+</div>
